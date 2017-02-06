@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="base.musicaltry.Menu">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="#FFC9C1">
+
+        <TextView
+            android:text="Email"
+            android:layout_width="167dp"
+            android:id="@+id/texto_email"
+            android:layout_height="40dp"
+            android:textSize="28sp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="140dp" />
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="271dp"
+            android:layout_height="47dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/log_senha"
+            tools:background="#dfd6d5"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="50dp"
+            android:elevation="1dp" />
+
+        <EditText
+            android:layout_width="271dp"
+            android:layout_height="47dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/log_email"
+            tools:background="#dfd6d5"
+            android:layout_marginTop="178dp"
+            android:layout_marginLeft="50dp"
+            android:elevation="1dp" />
+
+        <TextView
+            android:text="Senha"
+            android:layout_width="167dp"
+            android:id="@+id/texto_senha"
+            android:layout_height="40dp"
+            android:textSize="28sp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="240dp" />
+
+        <Button
+            android:text="Login"
+            android:layout_width="276dp"
+            android:layout_height="64dp"
+            android:id="@+id/btn_login"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="50dp" />
+
+    </FrameLayout>
+
+</FrameLayout>

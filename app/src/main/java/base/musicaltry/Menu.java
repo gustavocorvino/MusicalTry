@@ -87,7 +87,7 @@ public class Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_login);
 
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
